@@ -81,7 +81,7 @@
     </div>
     {{-- Departments container ends --}}
 
-    <div class="container-fluid" id="hmsFeatures">
+   {{-- <div class="container-fluid" id="hmsFeatures">
         <div class="container mt-5">
             <h4 class="m-0 p-0 text-center section-heading">Backend Features</h4>
             <div class="row">
@@ -95,7 +95,7 @@
                             </div>
                             <div class="hms__features-content text-center">
                                 <h4 class="mt-3">Dashboard</h4>
-                                {{--                                <p class="hms__feature-text text-muted"></p>--}}
+                                                          <p class="hms__feature-text text-muted"></p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12 hms__features__block wow fadeInUp">
@@ -394,10 +394,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     {{-- start using hms block --}}
 
-    <div class="container-fluid start-using-block">
+    {{--<div class="container-fluid start-using-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 justify-content-center d-flex flex-column start-using-content">
@@ -411,7 +411,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
     {{-- end start using hms block --}}
 
     @if(count($testimonials) > 0)
