@@ -1,0 +1,6 @@
+/vendor
+/images
+mix-manifest.json
+/fonts
+/uploads
+!/uploads/opd_timelines
