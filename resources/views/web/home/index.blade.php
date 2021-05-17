@@ -24,8 +24,8 @@
                             <p class="welcome-text mb-5 wow fadeInUp" data-wow-duration="0.4s">Welcome to <br> <span
                                         class="heading-name">Radiant</span> <span class="heading-text">Manage your Hospital's day to day operations digitally with ease and effortlessly.</span>
                             </p>
-                            <a href="{{url('login')}}" class="header-contact-button wow bounceIn"
-                               data-wow-delay="0.4s">Buy Now</a>
+                           {{-- <a href="{{url('login')}}" class="header-contact-button wow bounceIn"
+                               data-wow-delay="0.4s">Buy Now</a>--}}
                         </div>
                     </div>
                 </div>

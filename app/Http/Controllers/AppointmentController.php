@@ -45,6 +45,7 @@ class AppointmentController extends AppBaseController
     public function index(Request $request)
     {
         if ($request->ajax()) {
+      
             return Datatables::of((new AppointmentDataTable())->get($request->only(['is_completed'])))->make(true);
         }
         $statusArr = Appointment::STATUS_ARR;

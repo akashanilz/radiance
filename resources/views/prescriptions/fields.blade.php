@@ -1,6 +1,7 @@
 <div class="row">
     <div class="form-group col-sm-3">
         {{ Form::label('patient_id', __('messages.prescription.patient').':') }}<label class="required">*</label>
+
         {{ Form::select('patient_id',$patients, null, ['class' => 'form-control','required','id' => 'patient_id','placeholder'=>'Select Patient']) }}
     </div>
     @if(Auth::user()->hasRole('Doctor'))
@@ -18,6 +19,65 @@
             {{ Form::text('food_allergies', null, ['class' => 'form-control']) }}
         </div>
     </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('add_symptoms', __('Add symptoms').':') }}
+            {{ Form::textarea('add_symptoms', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('medicines', __('Medicines').':') }}
+            {{ Form::textarea('medicines', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('medicines_dose', __('Medicines dose').':') }}
+            {{ Form::textarea('medicines_dose', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('medicines_quantity', __('Medicines quantity').':') }}
+            {{ Form::textarea('medicines_quantity', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('ayurvedic_diagnosis', __('Ayurvedic diagnosis').':') }}
+            {{ Form::text('ayurvedic_diagnosis', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('modern_diagnosis', __('Modern diagnosis').':') }}
+            {{ Form::text('modern_diagnosis', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('treatment_time', __('Treatment time').':') }}
+            {{ Form::time('treatment_time', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('treatment_suggestions', __('Treatment suggestions').':') }}
+            {{ Form::text('treatment_suggestions', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('diet_chart_settings', __('Diet chart settings').':') }}
+            {{ Form::text('diet_chart_settings', null, ['class' => 'form-control']) }}
+        </div>
+    </div>
+
     <div class="col-md-3">
         <div class="form-group">
             {{ Form::label('tendency_bleed', __('messages.prescription.tendency_bleed').':') }}

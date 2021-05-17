@@ -5,6 +5,7 @@
             <p>{{ $prescription->patient->user->full_name }}</p>
         </div>
     </div>
+    
     <div class="col-md-3">
         <div class="form-group">
             {{ Form::label('food_allergies', __('messages.prescription.food_allergies').':', ['class' => 'font-weight-bold']) }}

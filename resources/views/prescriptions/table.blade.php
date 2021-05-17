@@ -1,5 +1,6 @@
 <table class="table table-responsive-sm table-striped table-bordered" id="prescriptionsTable">
     <thead>
+   
     <tr>
         <th>{{ __('messages.prescription.patient') }}</th>
         <th>{{ __('messages.patient_admission.doctor') }}</th>

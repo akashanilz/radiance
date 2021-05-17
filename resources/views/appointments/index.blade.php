@@ -15,6 +15,7 @@
                 <div class="filter-container">
                         <div class="d-flex flex-column mr-2">
                             <label class=""><b>{{ __('messages.common.status') }}</b></label>
+                         
                             {{ Form::select('status',$statusArr,false,['id' => 'status', 'class' => 'form-control']) }}
                         </div>
                     <div class="mr-0 actions-btn">

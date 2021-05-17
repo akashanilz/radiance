@@ -18,6 +18,15 @@ class CreatePrescriptionsTable extends Migration
             $table->unsignedInteger('patient_id');
             $table->unsignedBigInteger('doctor_id')->nullable();
             $table->string('food_allergies')->nullable();
+            $table->string('add_symptoms',1000)->nullable();
+            $table->string('medicines')->nullable();
+            $table->string('medicines_dose')->nullable();
+            $table->string('ayurvedic_diagnosis')->nullable();
+            $table->string('modern_diagnosis')->nullable();
+            $table->string('treatment_time')->nullable();
+            $table->string('treatment_suggestions')->nullable();
+            $table->string('diet_chart_settings')->nullable();
+            $table->string('medicines_quantity')->nullable();
             $table->string('tendency_bleed')->nullable();
             $table->string('heart_disease')->nullable();
             $table->string('high_blood_pressure')->nullable();

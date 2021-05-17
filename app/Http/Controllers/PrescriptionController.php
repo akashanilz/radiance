@@ -49,6 +49,7 @@ class PrescriptionController extends AppBaseController
             return Datatables::of((new PrescriptionDataTable())->get($request->only(['status'])))->make(true);
         }
         $data['statusArr'] = Prescription::STATUS_ARR;
+        
 
         return view('prescriptions.index', $data);
     }

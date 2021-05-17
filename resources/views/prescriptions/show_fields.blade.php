@@ -11,6 +11,64 @@
             <p>{{ $prescription->doctor->user->full_name }}</p>
         </div>
     </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('add_symptoms', __('Symptoms').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->add_symptoms != "") ? $prescription->add_symptoms : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('medicines', __('Medicines').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->medicines != "") ? $prescription->medicines : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('medicines_dose', __('Medicine Dose').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->medicines_dose != "") ? $prescription->medicines_dose : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('medicines_quantity', __('Medicine Quantity').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->medicines_quantity != "") ? $prescription->medicines_quantity : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('ayurvedic_diagnosis', __('Ayurvedic diagnosis').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->ayurvedic_diagnosis != "") ? $prescription->ayurvedic_diagnosis : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('modern_diagnosis', __('Modern diagnosis').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->modern_diagnosis != "") ? $prescription->modern_diagnosis : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('treatment_time', __('Treatment time').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->treatment_time != "") ? $prescription->treatment_time : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('treatment_suggestions', __('Treatment suggestions').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->treatment_suggestions != "") ? $prescription->treatment_suggestions : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="form-group">
+            {{ Form::label('diet_chart_settings', __('Diet chart settings').':', ['class' => 'font-weight-bold']) }}
+            <p>{{ ($prescription->diet_chart_settings != "") ? $prescription->diet_chart_settings : __('messages.common.n/a') }}</p>
+        </div>
+    </div>
     <div class="col-md-3">
         <div class="form-group">
             {{ Form::label('food_allergies', __('messages.prescription.food_allergies').':', ['class' => 'font-weight-bold']) }}
