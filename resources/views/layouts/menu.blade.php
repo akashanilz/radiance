@@ -848,7 +848,7 @@
     </ul>
 </li>
 
-{{-- Live Consultation --}}
+{{-- Live Consultation
 <li class="nav-item side-menus nav-dropdown">
     <a class="nav-link nav-dropdown-toggle menu-text-wrap" href="#" data-toggle="tooltip" data-placement="bottom"
        title="{{ __('messages.live_consultations') }}" data-delay='{"show":"500", "hide":"50"}' data-trigger="hover">
@@ -877,7 +877,7 @@
         </li>
         @endmodule
     </ul>
-</li>
+</li>--}}
 
 {{-- Settings --}}
 <li class="nav-item side-menus nav-dropdown">
@@ -1122,7 +1122,7 @@
         @endmodule
     </ul>
 </li>
-{{-- Live Consultation --}}
+{{-- Live Consultation
 <li class="nav-item side-menus nav-dropdown">
     <a class="nav-link nav-dropdown-toggle menu-text-wrap" href="#" data-toggle="tooltip" data-placement="bottom"
        title="{{ __('messages.live_consultations') }}" data-delay='{"show":"500", "hide":"50"}' data-trigger="hover">
@@ -1151,7 +1151,7 @@
         </li>
         @endmodule
     </ul>
-</li>
+</li>--}}
 @module('Notice Boards')
 <li class="nav-item side-menus {{ Request::is('employee/notice-board*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ url('employee/notice-board') }}" data-toggle="tooltip"
@@ -1244,7 +1244,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Meeting --}}
+{{-- Live Meeting
 @module('Live Meetings')
 <li class="nav-item side-menus {{ Request::is('live-meeting*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.meeting.index') }}" data-toggle="tooltip"
@@ -1254,7 +1254,7 @@
         <span>{{ __('messages.live_meetings') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 
 {{-- Mail --}}
 @module('Mail')
@@ -1630,7 +1630,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Meeting --}}
+{{-- Live Meeting
 @module('Live Meetings')
 <li class="nav-item side-menus {{ Request::is('live-meeting*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.meeting.index') }}" data-toggle="tooltip"
@@ -1640,7 +1640,7 @@
         <span>{{ __('messages.live_meetings') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 
 {{-- Mail --}}
 @module('Mail')
@@ -1782,7 +1782,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Meeting --}}
+{{-- Live Meeting
 @module('Live Meetings')
 <li class="nav-item side-menus {{ Request::is('live-meeting*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.meeting.index') }}" data-toggle="tooltip"
@@ -1792,7 +1792,7 @@
         <span>{{ __('messages.live_meetings') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 
 @module('My Payrolls')
 <li class="nav-item side-menus {{ Request::is('employee/payroll') ? 'active' : '' }}">
@@ -1863,7 +1863,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Meeting --}}
+{{-- Live Meeting
 @module('Live Meetings')
 <li class="nav-item side-menus {{ Request::is('live-meeting*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.meeting.index') }}" data-toggle="tooltip"
@@ -1873,7 +1873,7 @@
         <span>{{ __('messages.live_meetings') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 
 @endrole
 
@@ -2046,7 +2046,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Meeting --}}
+{{-- Live Meeting
 @module('Live Meetings')
 <li class="nav-item side-menus {{ Request::is('live-meeting*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.meeting.index') }}" data-toggle="tooltip"
@@ -2056,7 +2056,7 @@
         <span>{{ __('messages.live_meetings') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 @endrole
 
 @role('Accountant')
@@ -2177,7 +2177,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Meeting --}}
+{{-- Live Meeting
 @module('Live Meetings')
 <li class="nav-item side-menus {{ Request::is('live-meeting*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.meeting.index') }}" data-toggle="tooltip"
@@ -2187,7 +2187,7 @@
         <span>{{ __('messages.live_meetings') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 @module('My Payrolls')
 <li class="nav-item side-menus {{ Request::is('employee/payroll') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('payroll') }}" data-toggle="tooltip" data-placement="bottom"
@@ -2322,7 +2322,7 @@
     </a>
 </li>
 @endmodule
-{{-- Live Consultation --}}
+{{-- Live Consultation
 @module('Live Consultations')
 <li class="nav-item side-menus {{ Request::is('live-consultation*') ? 'active' : '' }}">
     <a class="nav-link menu-text-wrap" href="{{ route('live.consultation.index') }}" data-toggle="tooltip"
@@ -2332,5 +2332,5 @@
         <span>{{ __('messages.live_consultations') }}</span>
     </a>
 </li>
-@endmodule
+@endmodule--}}
 @endrole
