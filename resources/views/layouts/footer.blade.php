@@ -5,6 +5,6 @@
     </div>
     <div class="ml-auto">
         <span>Powered by</span>
-        <a href="//coreui.io">CoreUI</a>
+        <a href="//torcinfotech.com">Torcinfotech</a>
     </div>
 </footer>

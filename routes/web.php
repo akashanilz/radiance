@@ -11,6 +11,7 @@
 |
 */
 
+
 // Routes for Landing Page starts
 Route::get('/', 'Web\WebController@index')->name('front');
 Route::get('/demo', 'Web\WebController@demo')->name('demo');

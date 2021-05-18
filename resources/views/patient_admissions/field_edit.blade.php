@@ -103,13 +103,21 @@
         <div  class="form-group col-sm-6">
             <label for="">Reference for Radiance</label>
                 <select class="form-control" name="inquiry" id="">
-
+                    @if ($patientAdmission->inquiry==null)
                     <option value="">Reference for radiance (Inquiry)</option>
                     <option value="News papers">News Papers</option>
                     <option value="Internet">Internet</option>
                     <option value="Friends/Relatives">Friends/Relatives</option>
                     <option value="Social media">Social media</option>
                     <option value="Others">Others</option>
+                    @else
+                    <option value="{{ $patientAdmission->inquiry }}">{{ $patientAdmission->inquiry }}</option>
+                    <option value="News papers">News Papers</option>
+                    <option value="Internet">Internet</option>
+                    <option value="Friends/Relatives">Friends/Relatives</option>
+                    <option value="Social media">Social media</option>
+                    <option value="Others">Others</option>
+                    @endif
 
 
                 </select>
@@ -118,14 +126,22 @@
         <div  class="form-group col-sm-6">
             <label for="">Previous Treatment</label>
             <select class="form-control" name="previous_treatment" id="">
-
+                @if ($patientAdmission->previous_treatment==null)
                 <option value="">Previous treatment</option>
                 <option value="Ayurveda">Ayurveda</option>
                 <option value="Allopathy">Allopathy</option>
                 <option value="Homeopathy">Homeopathy</option>
                 <option value="Others">Others</option>
 
-               
+                @else
+                <option value="{{ $patientAdmission->previous_treatment }}">{{ $patientAdmission->previous_treatment }}</option>
+                <option value="Ayurveda">Ayurveda</option>
+                <option value="Allopathy">Allopathy</option>
+                <option value="Homeopathy">Homeopathy</option>
+
+                <option value="Others">Others</option>
+                @endif
+
 
             </select>
 

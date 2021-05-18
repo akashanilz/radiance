@@ -33,7 +33,7 @@
 @endmodule
 
 
-{{-- Vaccination --}}
+{{-- Vaccination
 <li class="nav-item side-menus nav-dropdown">
     <a class="nav-link nav-dropdown-toggle menu-text-wrap" href="#" data-toggle="tooltip" data-placement="bottom"
        title="{{ __('messages.vaccinations') }}" data-delay='{"show":"500", "hide":"50"}' data-trigger="hover">
@@ -62,7 +62,7 @@
         </li>
         @endmodule
     </ul>
-</li>
+</li>--}}
 
 
 {{-- Billing --}}
@@ -181,7 +181,7 @@
     </ul>
 </li>
 
-{{-- Blood Bank dropdown --}}
+{{-- Blood Bank dropdown
 <li class="nav-item side-menus nav-dropdown">
     <a class="nav-link nav-dropdown-toggle menu-text-wrap" href="#" data-toggle="tooltip" data-placement="bottom"
        title="{{ __('messages.blood_bank') }}" data-delay='{"show":"500", "hide":"50"}' data-trigger="hover">
@@ -230,7 +230,7 @@
         </li>
         @endmodule
     </ul>
-</li>
+</li>--}}
 
 {{--Cases Mgt--}}
 <li class="nav-item side-menus nav-dropdown">

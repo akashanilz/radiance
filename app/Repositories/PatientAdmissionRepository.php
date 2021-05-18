@@ -27,6 +27,11 @@ class PatientAdmissionRepository extends BaseRepository
         'insurance_id',
         'policy_no',
         'agent_name',
+
+        'present_illness',
+
+       'previous_treatment',
+        'inquiry',
         'guardian_name',
         'guardian_relation',
         'guardian_contact',
@@ -139,6 +144,7 @@ class PatientAdmissionRepository extends BaseRepository
     public function update($input, $patientAdmission)
     {
         try {
+
             unset($input['patient_id']);
             $input['guardian_contact'] = preparePhoneNumber($input, 'guardian_contact');
             $bedId = $patientAdmission->bed_id;

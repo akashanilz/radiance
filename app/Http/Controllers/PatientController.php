@@ -87,6 +87,7 @@ class PatientController extends AppBaseController
         $input['status'] = isset($input['status']) ? 1 : 0;
 
         $this->patientRepository->store($input);
+       // dd($input);
         $this->patientRepository->createNotification($input);
         Flash::success('Patient saved successfully.');
 

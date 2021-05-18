@@ -164,10 +164,12 @@ class PatientRepository extends BaseRepository
      */
     public function createNotification($input)
     {
+        $userIds=[];
         try {
             $receptionists = Receptionist::pluck('user_id', 'id')->toArray();
 
             foreach ($receptionists as $key => $userId) {
+
                 $userIds[$userId] = Notification::NOTIFICATION_FOR[Notification::RECEPTIONIST];
             }
             $users = getAllNotificationUser($userIds);

@@ -35,13 +35,13 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#departments" id="ancDepartments">Departments</a>
                 </li>
-                <li class="nav-item active">
+                {{--  <li class="nav-item active">
                     <a class="nav-link" href="#hmsFeatures" id="ancHmsFeatures">Backend Features</a>
                 </li>
                 </li>
-                <li class="nav-item active">
+              <li class="nav-item active">
                     <a class="nav-link" href="#testimonials" id="ancTestimonials">Testimonials</a>
-                </li>
+                </li>--}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">Login</a>
                 </li>

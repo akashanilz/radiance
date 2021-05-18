@@ -16,13 +16,13 @@
                 <div class="landing-header">
                     <div class="row">
                         <div class="col-lg-6 order-lg-2 col-12">
-                            <div class="header_image">
+                           {{-- <div class="header_image">
                                 <img src="{{ asset('web/img/header-img.jpg') }}">
-                            </div>
+                            </div>--}}
                         </div>
                         <div class="col-lg-6 header-text order-lg-1 col-12">
                             <p class="welcome-text mb-5 wow fadeInUp" data-wow-duration="0.4s">Welcome to <br> <span
-                                        class="heading-name">Radiant</span> <span class="heading-text">Manage your Hospital's day to day operations digitally with ease and effortlessly.</span>
+                                        class="heading-name">Radiance</span> <span class="heading-text">Manage your Hospital's day to day operations digitally with ease and effortlessly.</span>
                             </p>
                            {{-- <a href="{{url('login')}}" class="header-contact-button wow bounceIn"
                                data-wow-delay="0.4s">Buy Now</a>--}}

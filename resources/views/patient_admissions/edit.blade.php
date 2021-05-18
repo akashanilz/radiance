@@ -21,7 +21,7 @@
                         <div class="card-body">
                             {{ Form::model($patientAdmission, ['route' => ['patient-admissions.update', $patientAdmission->id], 'method' => 'patch', 'id' => 'editPatientAdmission']) }}
 
-                            @include('patient_admissions.fields')
+                            @include('patient_admissions.field_edit')
 
                             {{ Form::close() }}
                         </div>

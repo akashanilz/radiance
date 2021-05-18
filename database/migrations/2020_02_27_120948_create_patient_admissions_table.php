@@ -25,13 +25,17 @@ class CreatePatientAdmissionsTable extends Migration
             $table->string('policy_no')->nullable();
             $table->string('agent_name')->nullable();
             $table->string('guardian_name')->nullable();
-            $table->string('guardian_relation')->nullable();
+            $table->string('ayurveda')->nullable();
+            $table->string('allopathy')->nullable();
+            $table->string('homeopathy')->nullable();
+            $table->string('others')->nullable();
+            $table->string('inquiry')->nullable();
             $table->string('guardian_contact')->nullable();
             $table->string('guardian_address')->nullable();
             $table->boolean('status')->nullable();
             $table->timestamps();
 
-            $table->foreign('patient_id')->references('id')->on('patients')
+          /*  $table->foreign('patient_id')->references('id')->on('patients')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->foreign('doctor_id')->references('id')->on('doctors')
@@ -45,7 +49,7 @@ class CreatePatientAdmissionsTable extends Migration
                 ->onUpdate('cascade');
             $table->foreign('bed_id')->references('id')->on('beds')
                 ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->onDelete('cascade');*/
         });
     }
 

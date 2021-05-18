@@ -74,6 +74,7 @@ class PatientAdmissionController extends AppBaseController
     public function store(CreatePatientAdmissionRequest $request)
     {
         $input = $request->all();
+
         $input['status'] = isset($input['status']) ? 1 : 0;
         $patientId = Patient::with('user')->whereId($input['patient_id'])->first();
         $birthDate = $patientId->user->dob;
@@ -128,6 +129,7 @@ class PatientAdmissionController extends AppBaseController
     public function update(PatientAdmission $patientAdmission, UpdatePatientAdmissionRequest $request)
     {
         $input = $request->all();
+    
         $input['status'] = isset($input['status']) ? 1 : 0;
         $patientId = Patient::with('user')->whereId($patientAdmission->patient_id)->first();
         $birthDate = $patientId->user->dob;
